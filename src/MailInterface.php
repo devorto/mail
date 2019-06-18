@@ -16,6 +16,10 @@ interface MailInterface
 
     public function getReplyTo(): MailAddressInterface;
 
+	public function setCc(MailAddressInterface $cc): MailInterface;
+
+	public function getCc(): MailAddressInterface;
+
     public function setSubject(MailSubjectInterface $subject): MailInterface;
 
     public function getSubject(): MailSubjectInterface;
