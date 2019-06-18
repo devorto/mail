@@ -16,6 +16,10 @@ interface MailInterface
 
     public function getReplyTo(): MailAddressInterface;
 
+    public function setCc(MailAddressInterface $cc): MailInterface;
+
+    public function getCc(): MailAddressInterface;
+
     public function setSubject(MailSubjectInterface $subject): MailInterface;
 
     public function getSubject(): MailSubjectInterface;
@@ -27,11 +31,11 @@ interface MailInterface
      */
     public function getAttachments(): array;
 
-	public function setHtmlMessage(MailMessageInterface $message): MailInterface;
+    public function setHtmlMessage(MailMessageInterface $message): MailInterface;
 
-	public function getHtmlMessage(): MailMessageInterface;
+    public function getHtmlMessage(): MailMessageInterface;
 
-	public function setTextMessage(MailMessageInterface $message): MailInterface;
+    public function setTextMessage(MailMessageInterface $message): MailInterface;
 
     public function getTextMessage(): MailMessageInterface;
 
