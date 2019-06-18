@@ -2,6 +2,15 @@
 	"name": "devorto/mail",
 	"description": "General mail interface",
 	"type": "library",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Geoffrey Dijkstra",
+			"email": "info@devorto.com",
+			"homepage": "https://www.devorto.com/",
+			"role": "Owner"
+		}
+	],
 	"require": {
 		"php": "^7.1"
 	},
