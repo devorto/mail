@@ -12,6 +12,9 @@ interface MailAddressInterface
      */
     public function __construct(string $address, string $name = null);
 
+    /**
+     * @return string
+     */
     public function getAddress(): string;
 
     /**
