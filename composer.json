@@ -1,6 +1,6 @@
 {
 	"name": "devorto/mail",
-	"description": "General mail interface",
+	"description": "General mail interface.",
 	"type": "library",
 	"license": "MIT",
 	"authors": [
@@ -12,11 +12,11 @@
 		}
 	],
 	"require": {
-		"php": "^7.1"
+		"php": "^7.1.0"
 	},
 	"autoload": {
 		"psr-4": {
-			"devorto\\mail\\": "src/"
+			"Devorto\\Mail\\": "src/"
 		}
 	}
 }
