@@ -12,42 +12,42 @@ class Mail
     /**
      * @var Recipient[]
      */
-    protected $to = [];
+    protected array $to = [];
 
     /**
      * @var Recipient[]
      */
-    protected $cc = [];
+    protected array $cc = [];
 
     /**
      * @var Recipient[]
      */
-    protected $bcc = [];
+    protected array $bcc = [];
 
     /**
-     * @var Recipient
+     * @var Recipient|null
      */
-    protected $from = null;
+    protected ?Recipient $from = null;
 
     /**
-     * @var Recipient
+     * @var Recipient|null
      */
-    protected $replyTo = null;
+    protected ?Recipient $replyTo = null;
 
     /**
      * @var string
      */
-    protected $subject = '';
+    protected string $subject = '';
 
     /**
      * @var Attachment[]
      */
-    protected $attachments = [];
+    protected array $attachments = [];
 
     /**
      * @var string
      */
-    protected $message = '';
+    protected string $message = '';
 
     /**
      * @return Recipient[]

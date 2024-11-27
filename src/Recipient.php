@@ -14,12 +14,12 @@ class Recipient
     /**
      * @var string
      */
-    protected $email;
+    protected string $email;
 
     /**
      * @var string|null
      */
-    protected $name;
+    protected ?string $name = null;
 
     /**
      * Recipient constructor.
@@ -27,17 +27,16 @@ class Recipient
      * @param string $email
      * @param string|null $name
      */
-    public function __construct(string $email, string $name = null)
+    public function __construct(string $email, ?string $name = null)
     {
         $email = trim($email);
-        $name = trim($name);
 
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
             throw new InvalidArgumentException('Invalid email address provided.');
         }
 
         $this->email = $email;
-        $this->name = empty($name) ? null : $name;
+        $this->name = trim((string)$name) ?: null;
     }
 
     /**

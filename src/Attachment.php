@@ -14,17 +14,17 @@ class Attachment
     /**
      * @var string
      */
-    protected $name;
+    protected string $name;
 
     /**
      * @var string
      */
-    protected $mimeType;
+    protected string $mimeType;
 
     /**
      * @var string
      */
-    protected $content;
+    protected string $content;
 
     /**
      * Attachment constructor.
